@@ -1,0 +1,46 @@
+{
+  "name": "gui",
+  "version": "1.0.0",
+  "description": "Nuxt + Electron",
+  "author": "naga <naga@area-b.com>",
+  "private": true,
+  "main": "main.js",
+  "build": {
+    "appId": "",
+    "directories": {
+      "buildResources": "static"
+    }
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=DEV electron .",
+    "build": "nuxt build && electron-builder"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/vue-fontawesome": "^0.1.5",
+    "ajv": "^6.7.0",
+    "artyom.js": "^1.0.6",
+    "aws-sdk": "^2.382.0",
+    "element-ui": "^2.4.8",
+    "fs": "0.0.1-security",
+    "fs-extra": "^7.0.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "moment-timezone": "^0.5.23",
+    "nuxt": "^1.4.0",
+    "preferences": "^1.0.2",
+    "vue-feather-icons": "^4.10.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.1.4",
+    "electron": "2.0.0-beta.7",
+    "electron-builder": "^20.8.1",
+    "electron-devtools-installer": "^2.2.3",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
